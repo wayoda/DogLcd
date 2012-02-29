@@ -14,7 +14,7 @@
   * LCD RESET pin is not used
   * LCD Backlight pin is not used
  
-  Library homepage : http://code.google.com/p/doglcd/
+  Library homepage : https://github.com/wayoda/DogLcd/
 
 */
 

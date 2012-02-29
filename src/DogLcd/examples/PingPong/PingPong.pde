@@ -15,7 +15,7 @@
   * For boths displays the RESET pin is not used (connected to +5V)
   * For boths displays the Backlight switching is not used
 
-  Library homepage : http://code.google.com/p/doglcd/
+  Library homepage : https://github.com/wayoda/DogLcd/
 
 */
 
