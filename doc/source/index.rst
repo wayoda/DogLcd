@@ -16,6 +16,11 @@ I used the same names for methods and parameters to make it easy to port code wr
 LiquidCrystal-library to the DogLcd lib.
 
 The library-code has been tested on every version since Arduino-0017.
+
+.. figure::  images/DogLcd_Hello.jpg
+   :align:   center
+
+
  
 Installation
 ------------
@@ -199,9 +204,11 @@ Printing to the displays individually is simply a matter of calling the `print()
 	pong.print("PONG");
 
 
-Here is a picture of my Arduino Nano driving 2 displays with the above code
+.. figure::  images/DogLcd_PingPong.jpg
+   :align:   center
 
-.. image:: http://www.wayoda.org/share/pictures/doglcd/PingPong.jpg
+   Here is a picture of my Arduino Nano driving 2 displays with the above code
+
 
 Indices and tables
 ==================
