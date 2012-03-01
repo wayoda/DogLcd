@@ -89,6 +89,7 @@ As with every Arduino library we habe to include the library header.
 
 Then we create a new static DogLcd variable by calling the constructor 
 
+
 ``DogLcd lcd(2, 3, 4, 5);``
 
 The four parameters refer to the pins on the Arduino that drive 
