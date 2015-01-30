@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<project name="DogLcd" default="help" basedir=".">
+  <!-- LedControl setup the version information -->
+    <!-- Read the version information -->
+    <loadproperties srcFile="version.properties"/>
+
+    <property name="doglcd.zip-version" 
+        value="${doglcd.major.version}.${doglcd.minor.version}.${doglcd.build.version}" 
+        /> 
+
+
+    <!-- directory structure setup -->
+    <property name="doglcd.src" value="${basedir}/DogLcd"/>
+    <property name="dist.dir" value="${basedir}/dist"/>
+
+    <target name="help" >
+        <echo message="
+            Buildscript for packaging the Arduino DogLcd library ${line.separator}
+            'ant dist'    create a zip-file of the library in ${dist.dir}${line.separator}
+            " 
+            />
+
+    </target>
+
+    <!-- create the zip files for library distribuion -->
+    <target name="doglcd.dist" >
+        <mkdir dir="${dist.dir}" />
+        <delete file="${dist.dir}/DogLcd-${doglcd.zip-version}.zip" />
+        <zip destfile="${dist.dir}/DogLcd-${doglcd.zip-version}.zip">
+            <zipfileset dir="${doglcd.src}"
+                prefix="DogLcd/" 
+                filemode="755" 
+                dirmode="755"
+                includes="*.h, *.cpp, keywords.txt" >
+            </zipfileset>
+            <zipfileset dir="${doglcd.src}/examples"
+                prefix="DogLcd/examples" 
+                filemode="755" 
+                dirmode="755"
+                includes="**/*.ino" >
+            </zipfileset>
+        </zip>
+    </target>
+
+
+    <!-- create all zip files for library distribuion -->
+    <target name="dist" depends="doglcd.dist" />
+
+</project>
+

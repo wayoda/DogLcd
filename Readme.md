@@ -12,13 +12,9 @@ since each additional dsiplay will require only one more IO-Pin from the Arduino
 Download
 --------
 The lastest binary version of the Library is always available on the 
-[Download Page](https://github.com/wayoda/DogLcd/downloads) of the project.
+[Release Page](https://github.com/wayoda/DogLcd/releases) of the project.
 
 Install
 -------
-Unzip the library to the `libraries`-folder of you arduino `sketchbook`-folder
-
-
-
-
+The library can be installed using the [standard Arduino library install procedure](http://arduino.cc/en/Guide/Libraries#.UwxndHX5PtY)  
 
